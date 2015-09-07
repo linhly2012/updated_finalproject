@@ -1,0 +1,28 @@
+<link rel="stylesheet" type="text/css" href="../style/menu.css">
+<link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+
+<body background='../picture/sec2.jpg' height='60%'>
+  <h1 class='bodyPart'>
+    <ul class="navigation">
+      <li><a href="/">Home</a></li>
+      <li><a href="/word">Word Page</a></li>
+      <li><a href="/feedBack">Feedback </a></li>
+      <li><a href="/aboutUs">About Us</a></li>
+      <li><font color='white'>
+        {% if user %}
+          hello, </br> {{ user }}
+        {% else %}
+          <a href="{{ login_url }}" ><font color="white">Login</font></a>
+        {% endif %}
+          <ul>
+            <li><a href="{{ signout_url }}">
+              <font color='white'>Log Out</font></a></li>
+          <ul>
+        </font>
+    </li>
+    </ul>
+  </h1>
+
+</body>

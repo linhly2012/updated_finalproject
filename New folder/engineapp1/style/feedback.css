@@ -1,0 +1,43 @@
+#title {
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: auto;
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  font-size: 0.7em;
+}
+
+#survey {
+  width: 85%;
+  padding-left: 5%;
+  display: inline-block;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+
+}
+
+#submitbutton {
+  width: 8em;
+  height: 4em;
+  border-radius: 25px;
+  background-color: pink;
+  font-size: .5em;
+}
+
+#thank{
+  text-align: center;
+  color: white;
+}
+
+#signout{   /*style the sign out function*/
+  position: absolute;
+  right: 60px;
+  top: 0px;
+  color: white;
+}
+
+a:link{ /*take out the underline on the word that has embedded link under*/
+  text-decoration: none;
+}

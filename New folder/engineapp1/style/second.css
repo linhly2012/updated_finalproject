@@ -1,0 +1,102 @@
+body{
+  font-family: 'Quicksand', sans-serif;
+  color: white;
+}
+
+/*scroll menu*/
+#scrollsections {
+    width: 85%;
+    height: 800px;
+    overflow: scroll;
+    float: right;
+    display: inline-block;
+}
+#scrollsec1 {
+  /*background-color: blue;*/
+  overflow: auto;
+
+}
+
+#scrollsec2 {
+  margin-top: 2%;
+  background-color: rgba(192,192,192,0.3);
+  overflow: auto;
+
+  padding-right:70px;
+}
+
+#scrollsec3 {
+  background-color: rgba(255,0,0,0.3);
+  overflow: auto;
+  padding-left:70px;
+  padding-right: 70px;
+}
+
+#scrollsec1pic {
+  width: 100%;
+  height: 800px;
+}
+
+#scroll {
+  resize: auto;
+  width: 100%;
+  height: 800px;
+  overflow: scroll;
+  float: right;
+  padding-right: 5%;
+}
+
+#submit2{
+  float: right;
+}
+
+a:link { /*take out the underline on the word that has embedded link under*/
+  text-decoration: none;
+}
+
+/*bio pics*/
+.shrink img {
+  height: 390px;
+  width: 370px;
+  border-radius: 15px;
+
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+
+
+}
+
+.shrink img:hover {
+  height: 420px;
+  width: 390px;
+
+}
+
+
+
+/*bios*/
+
+#linh {
+  width: 500px;
+  float: right;
+  padding-top: 50px;
+  border-radius: 15px;
+}
+
+
+#steven {
+  width: 500px;
+  float: right;
+  padding-top: 100px;
+  border-radius: 15px;
+}
+
+#uka {
+  width: 500px;
+  float: right;
+  padding-top: 50px;
+  border-radius: 15px;
+}

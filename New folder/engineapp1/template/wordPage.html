@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+</html>
+<head>
+
+  <title> P E A R </title>
+  <link rel="stylesheet" type="text/css" href="../style/wordPage.css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- JQuery library-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- CSS for the vis libray -->
+  <link type = "text/css" rel = "stylesheet" href = "../style/vis.css">
+  <link type = "text/css" rel = "stylesheet" href = "../style/vis.min.css">
+  <!-- javascript for the vis library -->
+  <script type = "text/javascript" src = "../js/vis.js"></script>
+  <!-- form for the nodes -->
+  <script type = "text/javascript" src ="../js/forms.js"></script>
+
+</head>
+
+<body background='../picture/sec2.jpg'>
+  {% include "template/menu.html" %}
+  <div id="menu">
+    <section id='forminsidemenu'>
+
+        <!--for user to insert words -->
+        <form id="wordinsert" action="/nodes" method="POST">
+            <br/>
+            <font id='formWord'color="white">Word :
+              <input id = "first" type = "text" name = "first" value={{ word }}></input>
+            </font>
+            <br/>
+
+
+            <br/>
+            <button id = "submitButton" type = "button" value = "Submit"> Submit </button>
+            <!-- <button id = "submitButton2" type = "button" value = "New Word"> -->
+        </form>
+
+        <!-- refresh button -->
+        <div>
+            <button id="refresh"onclick="myFunction()">Clear</button>
+            <script>function myFunction() {location.reload(); } </script>
+        </div>
+
+        <!-- Node insertion right here -->
+        <div id="mynetwork"></div>
+    </section>
+  </div>
+
+</body>
+</html>

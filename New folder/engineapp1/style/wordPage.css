@@ -1,0 +1,72 @@
+#title {
+  font-family: 'Quicksand', sans-serif;
+  overflow-x: auto;
+
+}
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+#submitButton {
+  width: 75px;
+  height: 75px;
+}
+
+#mynetwork{
+  /*border: solid white 5px;*/
+  margin-left: 100px;
+  margin-top: 100px;
+  /*float: right;*/
+  position: absolute;
+  height: 80%;
+  width: 85%;
+
+  /*resize: auto;*/
+}
+
+#first{
+  float: right;
+  width: 90px;
+  height: 30px;
+}
+
+/*form section style */
+#wordinsert{
+  position: absolute;
+  padding-left: 10%;
+  /*float: right;*/
+  /*padding-right: 905px;*/
+
+}
+
+/* style for the submit button*/
+#submitButton {
+  width: 85px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  margin-left: 60px;
+}
+
+/*refresh button*/
+#refresh {
+  margin-left: 290px;
+  margin-top: 67px;
+  width: 85px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+}
+
+#formWord{
+  font-size: 1.4em;
+}
+#formnsidemenu{
+  background-image: url('wordbackground.jpg');
+  color: white;
+}
+
+a:link{
+  text-decoration: none;
+}

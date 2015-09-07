@@ -1,0 +1,39 @@
+<!--FeedbAck page-->
+<!DOCTYPE html>
+
+</html>
+<head>
+
+  <title> P E A R </title>
+  <link rel="stylesheet" type="text/css" href="../style/feedback.css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+
+<body background='../picture/sec2.jpg'>
+  {% include "template/menu.html" %}
+  <form id="survey" action="/feedBack" method="POST">
+    <br/>
+    <br/>
+    <br/>
+    <div>
+      <font color="white">What is your name?</font> <br/>
+      <input type="text" name="username"/>
+    </div>
+
+    <div>
+      <font color="white">What do you think of <br/> this application??</font>
+      <br/><input type="text" name="useful"/>
+    </div>
+
+    <div><input type="submit" value="Submit"/>
+      <div id="thank">
+        {% if username %}
+            Thank you, {{ username }}
+        {% endif %}
+      </div>
+    </div>
+  </form>
+</body>
+</html>
